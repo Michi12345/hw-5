@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+    justify-content: space-around;
+}
+
+div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+form > div :nth-child(1) {
+    order: 1;
+}
+
+form > div :nth-child(2) {
+    order: 3;
+}
+
+form > div :nth-child(3) {
+    order: 2;
+}
+
+div label:first-child {
+    width: 100px;
+    text-align: right;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.gender {
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+input:not([type=radio]):not([type=checkbox]), select, fieldset, textarea,.agreement,.btn {
+    width: calc(100% - 130px);
+}
+
+input:not([type=radio]):not([type=checkbox]), select, fieldset, textarea{
+    border: 1px solid #6195ea;
+    padding-left: 5px;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+
+input {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+label[required]:after {
+    content: "*";
+    color: red;
+}
+
+select {
+    margin-left: 10px;
+}
+
+textarea {
+    resize: vertical;
+    padding: 0;
+    margin-left: 10px;
+    height: 80px;
+}
+
+#license {
+    order: 1;
+    width: 10px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    align-self: center;
+}
+
+.agreement{
+    justify-content: start;
+    margin: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(calendar.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    color: rgba(0, 0, 0, 0);
+    opacity: 100;
+}
+
+.btn {
+    justify-content: start;
+    margin: 0;
+}
+
+button {
+    width: 190px;
+    height: 25px;
+    background: #1958fe;
+    border: none;
+    color: #fff;
+}
+
+#smile img{
+    display: inline-block;
+    max-width: 150px;
+    max-height: 150px;
+}
